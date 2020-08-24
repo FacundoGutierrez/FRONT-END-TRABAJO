@@ -1,0 +1,36 @@
+
+<div class="container-fluid "  ngClass="{{usuarioService.usuario.color}}">
+    <p class="text-center">{{contador}}</p>
+    <div class="row" >
+        <div class="col" id="asd" *ngIf="usuarioService.logged" >
+
+            <button class="btn"   type="button" id="button"  ngClass="{{color}}"  (click)="reset()" [disabled]="usuarioService.usuario.presionado">?????</button>
+       
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            Registro
+          </button>
+        
+        <div class="col collapse" id="collapseExample">
+
+            <table class="table table-hover table-dark">
+                <thead>
+                  <tr>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Password</th>
+                    <th scope="col">Trolleado</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor=" let item of usuarios" ngClass="{{item.color}}">
+                    
+                    <td>{{item.nombre}}</td>
+                    <td>{{item.password}}</td>
+                    <td><p *ngIf="item.presionado">si</p></td>
+            
+                </tr>
+                </tbody>
+              </table>
+            </div>
+        </div>
+    </div>
+</div>

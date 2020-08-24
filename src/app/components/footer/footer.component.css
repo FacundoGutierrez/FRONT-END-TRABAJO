@@ -1,0 +1,62 @@
+.purpura{
+    background-color:  purple;
+}
+.azul{
+    background-color:  blue;
+}
+.verde{
+    background-color:  green;
+}
+
+.amarillo{
+    background-color:  yellow;
+}
+.naranja{
+    background-color:  orange;
+}
+.rojo{
+    background-color:  red;
+}
+.blanco{
+    background-color:  white;
+}
+
+
+.footer
+{
+    background: darkslategrey;
+    color: silver;
+    height: 300px;
+    position: relative;
+    align-self: flex-end;
+    
+}
+.footer .footer-content{
+    
+    height: 250px;
+    display: flex;
+ 
+
+}
+.footer .footer-content .footer-section{
+    flex: 1;
+    border : 1px solid white;
+}
+
+.footer .footer-bottom{
+
+    background: steelblue;
+    color: turquoise;
+    height: 50px;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding-top:10px;
+    width: 100%;
+}
+
+.navbar-brand{
+ color:white;
+ text-align: center;
+}

@@ -1,0 +1,52 @@
+.purpura{
+    background-color:  purple;
+}
+.azul{
+    background-color:  blue;
+}
+.verde{
+    background-color:  green;
+}
+
+.amarillo{
+    background-color:  yellow;
+    color: black;
+    
+}
+.naranja{
+    background-color:  orange;
+}
+.rojo{
+    background-color:  red;
+}
+.blanco{
+    background-color:  white;
+}
+
+#asd{
+
+color :black;
+
+text-align: center;
+
+}
+
+.btn{
+    width: 200px;
+    height: 60px;
+    font-size: large;
+    background-color: black; 
+}
+
+.row{
+    display:flex; 
+    min-height:100vh; 
+    flex-wrap:wrap;
+}
+
+
+
+
+
+    
+
