@@ -18,6 +18,7 @@ export class BodyComponent implements OnInit {
   registro: Array<any>;
   usuarios: Array<Usuario>;
   constructor(public usuarioService: UsuarioService) {
+    this.actualizarRegistro();
     this.usuarios = JSON.parse(localStorage.getItem('usuarios'));
     this.registro = new Array<any>();
     this.num = this.aleatorio();
@@ -90,5 +91,9 @@ export class BodyComponent implements OnInit {
     let n;
     n = Math.floor((Math.random() * (60 - 1)) );
     return n;
+  }
+  actualizarRegistro(){
+    this.usuarios = JSON.parse(localStorage.getItem('usuarios'));
+
   }
 }

@@ -6,7 +6,7 @@
 
             <button class="btn"   type="button" id="button"  ngClass="{{color}}"  (click)="reset()" [disabled]="usuarioService.usuario.presionado">?????</button>
        
-        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        <button class="btn btn-primary" (click)="actualizarRegistro()" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
             Registro
           </button>
         
@@ -25,7 +25,7 @@
                     
                     <td>{{item.nombre}}</td>
                     <td>{{item.password}}</td>
-                    <td><p *ngIf="item.presionado">si</p></td>
+                    <td><p *ngIf="item.presionado">si</p><p *ngIf="!item.presionado">no</p></td>
             
                 </tr>
                 </tbody>
