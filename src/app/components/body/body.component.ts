@@ -65,28 +65,43 @@ export class BodyComponent implements OnInit {
     if (a <= 60 && a > 51)
     {
       return 'purpura';
-    };
-    if (a <= 51 && a > 41)
+    }
+    else
     {
-      return 'azul';
-    };
-    if (a <= 41 && a > 31)
-    {
-      return 'verde';
-    };
-    if ( a <= 31 && a > 21)
-    {
-      return 'amarillo';
-    };
-    if (a <= 21 && a > 11 )
-    {
-      return 'naranja';
-    };
-    if (a <= 11 && a == 0 )
-    {
-      return 'rojo';
-    };
+      if (a <= 51 && a > 41)
+      {
+        return 'azul';
+      }
+      else{
+        if (a <= 41 && a > 31)
+        {
+          return 'verde';
+        }
+        else
+        {
+          if ( a <= 31 && a > 21)
+          {
+            return 'amarillo';
+          }
+          else
+          {
+            if (a <= 21 && a > 11 )
+            {
+              return 'naranja';
+            }
+            else
+            {
+              if (a <= 11 && a === 0 )
+              {
+                return 'rojo';
+              }
+            }
+          }
+        }
+      }
+    }
   }
+  
   aleatorio(): number{
     let n;
     n = Math.floor((Math.random() * (60 - 1)) );
